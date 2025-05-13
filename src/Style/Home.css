@@ -1,0 +1,10 @@
+.home {
+    margin-top: 150px;
+}
+
+@media (max-width: 768px) {
+    .home {
+      margin-top: 50px;
+      color: rgb(7, 7, 7);
+    }
+  }

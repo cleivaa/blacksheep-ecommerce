@@ -1,0 +1,73 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Evita el scroll horizontal */
+}
+
+.container {
+  width: 100%; 
+  min-height: 100vh;
+  margin: 0 !important; /* Sobrescribe márgenes de Bootstrap */
+  padding: 0 !important; /* Sobrescribe paddings de Bootstrap */
+  background-color: #9f0b0b; 
+  display: flex;
+  flex-direction: column; /* Apila los elementos verticalmente */
+  gap: 0px; /* Espaciado entre los elementos */
+}
+
+.container > div {
+  background-color:white;
+  margin: 0;
+  padding-top: 100px;
+}
+
+.container > div.navbar {
+  width: 100%;
+  height: 80px;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  text-align: center; 
+  padding: 0; 
+}
+
+.container > div.home {
+  flex: 1; 
+}
+
+.container > div.cards {
+  flex: 1;
+  justify-content: center;
+  align-content: center;
+  
+}
+
+.container > div.footer {
+  text-align: center;
+}
+
+.cards, .navbar, .footer {
+  width: 100%; 
+  margin: 0 auto; 
+  padding: 0;
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 0; 
+  }
+
+  .container > div {
+    padding: 8px;
+    font-size: 14px;
+  }
+}
